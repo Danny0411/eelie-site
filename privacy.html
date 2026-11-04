@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eelie 隱私權政策</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>Eelie 隱私權政策</h1>
+<p class="muted">最後更新：2026-11-04</p>
+<p>Eelie（以下稱本 App）是英文、日文口說練習 App。本 App 不需要註冊或登入，沒有廣告，也不含任何分析、追蹤或廣告 SDK。</p>
+
+<h2 id="on-device">存在你 iPhone 上的資料</h2>
+<p>學習進度、單字與複習排程、對話紀錄與報告、錯誤筆記、學習記憶、AI 用量明細和設定，都只存在你的 iPhone 上，不會上傳到 Eelie 的伺服器。iPhone 的 iCloud 或電腦備份可能會一併備份這些資料，由 Apple 處理。你可以在「我的 › 設定 › 重設所有學習資料」全部刪除，刪除 App 也會清除。</p>
+
+<h2 id="ai">AI 功能（Eelie Plus）</h2>
+<p>AI 由 Anthropic 的 Claude 提供。使用 AI 功能時，以下資料會經過 Eelie 的伺服器轉送給 Anthropic，用來產生回覆：</p>
+<ul>
+<li>你打的字，以及語音辨識後的文字</li>
+<li>你送出批改的作文，以及你查詢、請 AI 解釋的單字和句子</li>
+<li>你在「拍照學」選擇的照片（縮小後傳送）</li>
+<li>學習摘要：你填的稱呼、程度、學習目標、興趣、準備的考試，以及 AI 記住的事。學習記憶可以在「我的 › 學習記憶」檢視、刪除或關閉。</li>
+</ul>
+<p>第一次使用前，App 會列出這些項目並請你同意。Anthropic 依其<a href="https://www.anthropic.com/legal/commercial-terms">商業服務條款</a>處理這些資料，不會用來訓練模型；保存期間與處理方式請見 <a href="https://www.anthropic.com/legal/privacy">Anthropic 隱私權政策</a>。</p>
+
+<h2 id="server">Eelie 的伺服器</h2>
+<p>Eelie 的伺服器架在 Cloudflare Workers 上，只負責確認訂閱、計算每日 AI 額度，然後轉送請求：</p>
+<ul>
+<li><b>不保存對話內容。</b> 你傳的文字和照片只在轉送當下經過伺服器，不會寫進資料庫或記錄檔。</li>
+<li><b>只記錄每日用量：</b> 訂閱的原始交易編號（Apple 產生的編號，不是你的 Apple 帳號）、日期、當天的 AI 費用、使用次數和字數（token 數），用來計算每日額度。這些紀錄保留 90 天後自動刪除。</li>
+<li><b>確認訂閱：</b> App 會傳送 App Store 簽署的訂閱交易資料（方案、交易編號、購買與到期日、商店地區），伺服器用 Apple 的憑證驗證。這份資料不含你的姓名、Email、Apple 帳號或付款方式。</li>
+<li>Eelie 的程式不記錄你的 IP 位址。Cloudflare 身為主機服務商，可能為了安全與防止濫用而處理連線資訊。</li>
+</ul>
+<p>因為伺服器只有交易編號，我們無法用姓名或 Email 找到你的紀錄；用量紀錄會在 90 天後自動刪除。</p>
+
+<h2 id="speech">麥克風、語音與相機</h2>
+<ul>
+<li>麥克風只在練習說話時使用：你按下麥克風時，或在對話中開啟免持模式、AI 說完自動開始聽的時候。語音辨識用 iOS 內建功能，裝置支援時完全在 iPhone 上進行，否則由 Apple 的語音辨識服務處理。錄音不會傳給 Eelie 或 Anthropic。</li>
+<li>發音評分和朗讀（iOS 內建語音）都在 iPhone 上進行。</li>
+<li>相機和相簿只在你使用「拍照學」時使用。照片縮小後送給 AI 分析，並存在 iPhone 上的拍照學紀錄裡，不會存在 Eelie 的伺服器。</li>
+</ul>
+
+<h2 id="purchase">購買</h2>
+<p>訂閱由 Apple 處理，Eelie 拿不到你的付款資訊。管理或取消訂閱請到 iPhone 的「設定 › 你的名字 › 訂閱項目」。</p>
+
+<h2 id="children">兒童</h2>
+<p>本 App 以成人學習者為對象，不是為 13 歲以下兒童設計，也不會刻意蒐集兒童的資料。</p>
+
+<h2 id="changes">政策變更與聯絡</h2>
+<p>政策有變更時會更新本頁與上方日期。如有任何問題，請寫信到 <a href="mailto:an789200@gmail.com">an789200@gmail.com</a>。</p>
+
+<hr>
+<div lang="en">
+<h1>Eelie Privacy Policy</h1>
+<p class="muted">Last updated: 2026-11-04</p>
+<p>Eelie is an English and Japanese speaking-practice app. It needs no account or sign-in, shows no ads, and contains no analytics, tracking or advertising SDKs.</p>
+<p><b>On your iPhone.</b> Learning progress, vocabulary and review schedules, conversation history and reports, mistake notes, learning memory, AI usage details and settings are stored only on your iPhone and are never uploaded to Eelie's server. iCloud or computer backups of your iPhone may include them; Apple handles those backups. Delete everything in Me › Settings › Reset all learning data, or by deleting the app.</p>
+<p><b>AI features (Eelie Plus).</b> AI is provided by Anthropic's Claude. When you use an AI feature, the following is relayed through Eelie's server to Anthropic to generate the answer: text you type and the text of your recognized speech; essays you submit for correction, and words and sentences you look up or ask the AI to explain; photos you choose in Photo Learning (downscaled); and a learning summary — the name you chose to be called, level, goals, interests, target exam and what the AI remembers about you (view, delete or turn off learning memory in Me › Learning Memory). The app lists these items and asks for your consent before first use. Anthropic processes this data under its <a href="https://www.anthropic.com/legal/commercial-terms">Commercial Terms</a> and does not train models on it; see the <a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a> for retention and handling.</p>
+<p><b>Eelie's server</b> runs on Cloudflare Workers. It checks your subscription, enforces a daily AI allowance and relays requests. It does <b>not</b> store conversation content: text and photos pass through only while being relayed and are never written to a database or log. It records only daily usage — your subscription's original transaction ID (an identifier created by Apple, not your Apple Account), the date, that day's AI cost, number of calls and tokens — to compute the daily allowance, and deletes these records automatically after 90 days. To check the subscription, the app sends the App Store-signed transaction (plan, transaction ID, purchase and expiry dates, storefront country), which the server verifies with Apple's certificates; it contains no name, email, Apple Account or payment method. Eelie's code does not log IP addresses; Cloudflare, as the hosting provider, may process connection data for security and abuse prevention. Because the server only knows transaction IDs, we cannot look up your records by name or email.</p>
+<p><b>Microphone, speech and camera.</b> The microphone is used only for speaking practice: when you tap the microphone, or in a conversation with hands-free mode on, where it starts listening after the AI finishes speaking. Speech recognition uses Apple's built-in recognizer, on the device when supported, otherwise Apple's speech recognition service. Recordings are never sent to Eelie or Anthropic. Pronunciation scoring and read-aloud (built-in iOS voices) run on the device. The camera and photo library are used only in Photo Learning. A downscaled photo is sent to the AI for analysis and kept in Photo Learning history on your iPhone; it is never stored on Eelie's server.</p>
+<p><b>Purchases</b> are handled by Apple; Eelie never sees your payment information. <b>Children:</b> Eelie is meant for adult learners, is not designed for children under 13 and does not knowingly collect children's data. <b>Changes</b> to this policy will be posted on this page with a new date.</p>
+<p>Questions: <a href="mailto:an789200@gmail.com">an789200@gmail.com</a></p>
+</div>
+<p><a href="index.html">← Eelie 支援 Support</a></p>
+</main></body></html>
